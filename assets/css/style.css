@@ -1,10 +1,17 @@
+*{
+    box-sizing: border-box;
+}
 html{
     height: 100%;
   }
   .main-logo{
       color: white;
-      padding-right: 20px;
+      padding: 20px;
       float: left;
+      background-color: #4aaaa5;
+      margin-top: 0;
+      
+     
   }
   p, a, label{
       color: #777777;
@@ -25,16 +32,10 @@ html{
       font-family: Georgia, 'Times New Roman', Times, serif;
       padding-left: 20px;
   }
-  .backgrounds{
-      background-color: #4aaaa5;
-      width: 300px;
-      float: left;
-  }
   .main-header{
       background-color: #ffffff;
       border-bottom: 2px solid #cccccc;
-      /*width: 960px;*/
-      height: 77px;
+      height: 76px;
       
   }
   .main-content{
@@ -132,4 +133,37 @@ html{
   }
   a{
     text-decoration: none;
+  }
+  @media screen and (max-width: 640px){
+    .main-content{
+        width: 600px;
+    }
+    hr, input, textarea{
+        width: 560px;
+    }
+    .main-logo{
+        text-align: center;
+        float: none;
+        width: 640px;
+    } 
+    .main-header{
+        height: 130px;
+        width: 640px;
+          
+    }
+    nav{
+        width: 640px;
+        float: none;
+        text-align: center;
+        margin-top: -30px;
+    }
+    #photoHelena{
+        float: none;
+        width: 560px;
+        height: auto;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
   }
