@@ -134,10 +134,21 @@ html{
   a{
     text-decoration: none;
   }
-  @media screen and (max-width: 768px){
 
-  }
+
+/*Media Screen*/
+
+  /*@media screen and (max-width: 768px){
+
+  }*/
   @media screen and (max-width: 640px){
+    body{
+        width: 640px;
+    }
+    .header-content{
+        width: 640px;
+        margin: 0 auto;
+    }
     .main-content{
         width: 600px;
     }
@@ -151,7 +162,7 @@ html{
     } 
     .main-header{
         height: 130px;
-        width: 640px;
+        width: 100%;
           
     }
     nav{
