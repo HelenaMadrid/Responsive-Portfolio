@@ -26,6 +26,7 @@ html{
       margin-left: 20px;
       width: 920px;
       font-size: 14px;
+      border: 1px solid black;
   }
   h1{
       color: #4aaaa5;
@@ -99,6 +100,7 @@ html{
   textarea{
       margin-left: 20px;
       width: 920px;
+      border: 1px solid black;
       
   }
   .img-container{
@@ -135,12 +137,51 @@ html{
     text-decoration: none;
   }
 
-
 /*Media Screen*/
+  @media (min-width: 769px) and (max-width: 980px){
+    body{
+        width: 960px;
+    }
+    .main-content{
+        width: 680px;
+        margin-left: 40px;
+    }
+    .main-logo{
+        margin-left: 40px;
+    }
+    hr, input, textarea{
+        width: 640px;
+    }
+    nav {
+        margin-right: 20px;
+    }
+  }
 
-  /*@media screen and (max-width: 768px){
-
-  }*/
+  @media (min-width: 641px) and (max-width: 768px){
+    body{
+        width: 768px;
+    }
+    .header-content{
+        width: 768px;
+        margin: 0 auto;
+    }
+    .main-content{
+        width: 728px;
+    }
+    hr, input, textarea{
+        width: 688px;
+    }
+    nav{
+        float: right;
+        width: auto;
+        margin-right: 20px;
+    }
+    .main-logo{
+        float: left;
+        width: auto;
+        margin-left: 20px;
+    } 
+  }
   @media screen and (max-width: 640px){
     body{
         width: 640px;
@@ -159,6 +200,7 @@ html{
         text-align: center;
         float: none;
         width: 640px;
+        /*margin-right: 20px;*/
     } 
     .main-header{
         height: 130px;
