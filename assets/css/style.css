@@ -58,7 +58,6 @@ html{
       border-top: 8px solid #4aaaa5;
       margin-top: auto;
   }
-  
   body{
       background-image: url("../images/dark-paths.png");
       background-color: royalblue;
@@ -147,27 +146,47 @@ html{
 /*Media Screen*/
   @media (min-width: 769px) and (max-width: 980px){
     body{
-        width: 960px;
+        max-width: 980px;
+        min-width: 769px;
+        height: 100%;
     }
     .main-content{
-        width: 680px;
+        /*width: 680px;
+        margin-left: 40px;*/
+        max-width: 65%;
+        /*min-width: 60%;*/
         margin-left: 40px;
+    }
+    .header-content{
+        width: 100%;
     }
     .main-logo{
         margin-left: 40px;
     }
     hr, input, textarea{
-        width: 640px;
+        width: 94%;
     }
     nav {
         margin-right: 20px;
+        width: auto;
+        overflow: hidden;
+    }
+    .img-container{
+        width: 45%;
+        margin-right: -5px;
+        /*margin-top: 20px;
+        margin-bottom: 20px;*/
+        
+    }  
+    .placeholder{
+        width: 100%;
     }
   }
 
   @media (min-width: 641px) and (max-width: 768px){
     body{
         max-width: 768px;
-        min-width: 651px;
+        min-width: 641px;
         height: 100%;
     }
     .header-content{
@@ -192,7 +211,7 @@ html{
 
     .img-container{
         /*display: block;*/
-        width: 40%;
+        width: 45%;
         /*margin: auto;*/
         /*margin-top: 20px;
         margin-bottom: 20px;*/
@@ -255,5 +274,4 @@ html{
         width: 100%;
         height: auto;
     }
-   
   }
